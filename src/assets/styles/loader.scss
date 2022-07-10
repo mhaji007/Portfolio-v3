@@ -1,0 +1,128 @@
+/*----CSS Variables----*/
+
+// :root {
+//     --main: #212121;
+//     --main-light:#2b2a2a;
+//     --accent: #bdbdbd;
+//     --primary-white: #ffffff;
+//     --primary-light-grey: #f4f4f4;
+//     --primary-dark-grey: #666666;
+//     --primary-grey: #ccd1d9;
+//     --primary-black: #000000;
+//     --primary-red: #ef4035;
+//     --primary-hover-red: #f33501;
+//     --primary-black: #000000;
+//     --primary-transparent-black: rgba(0, 0, 0, 0.7);
+//     --primary-green: rgb(0, 175, 0);
+//   }
+
+/*----------------------*/
+
+@import "./base.scss";
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background: $main;
+    display:grid;
+    place-items: center;
+    font-family: "Orbitron", sans-serif;
+    &__box{
+        position: relative;
+        width: 500px;
+        height: 200px;
+        border: 3px solid $primary-dark-grey;
+        border-top: 3px solid #cecccc;
+        @media (max-width:600px) {
+            & {
+                width:90vw
+            }            
+        }
+    }
+    &__bar {
+        width: 90%;
+        height: 10%;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        background:$primary-light-grey;
+        border-radius: 2px;
+
+        &--inner {
+            height: 100%;
+            width: 50%;
+            border-radius: 2px;
+            background:#ccd1d9;
+        }
+    }
+    &__text {
+        position: relative;
+        color: $primary-white;
+        padding: 1rem;
+        font-style: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:355px) {
+            & {
+                font-size: 16px;
+            }            
+        }
+
+        &--dot{
+            width: 15px;
+            height: 15px;
+            margin: 0 3px;
+            border-radius: 50%;
+            background:$primary-white;
+            animation: pulse 1s infinite;
+            @keyframes pulse {
+                from {
+                    opacity: 0;
+                    background:$primary-dark-grey
+                }
+                to {
+                    opacity: 1;
+                }              
+            }
+        }
+        &--border {
+            width: 85%;
+            height: 1px;
+            background:$primary-white;
+            position: absolute;
+            bottom:0;
+            left: 50%;
+            transform:translateX(-50%)
+        }
+    }
+
+    &__counter {
+        position: absolute;
+        top:70%;
+        left: 0;color: $primary-white;
+        font-size: 20px;
+        font-weight:700;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding:10px;
+
+        &--start-number {
+            padding-left:13px
+        }
+        &--end-number {
+            padding-right: 12px;
+            // color:var(--primary-dark-grey);
+        }
+    }
+}

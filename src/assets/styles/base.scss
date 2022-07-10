@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -30,3 +29,18 @@ p, h1, h2, h3, h4, h5, h6 {
 img, video, canvas, svg {
     max-width: 100%;
 }
+
+/*----Variables----*/
+$main: #212121;
+$main-light:#2b2a2a;
+$accent: #bdbdbd;
+$primary-white: #ffffff;
+$primary-light-grey: #f4f4f4;
+$primary-dark-grey: #666666;
+$primary-grey: #ccd1d9;
+$primary-black: #000000;
+$primary-red: #ef4035;
+$primary-hover-red: #f33501;
+$primary-black: #000000;
+$rimary-transparent-black: rgba(0, 0, 0, 0.7);
+$primary-green: rgb(0, 175, 0);
