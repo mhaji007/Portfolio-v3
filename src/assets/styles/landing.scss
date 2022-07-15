@@ -1,0 +1,34 @@
+@import "./base.scss";
+
+.landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:$main;
+    color:$primary-white;
+    overflow: hidden;
+    .header {
+        position: absolute;
+        top:1rem;
+        left:50%;
+        transform: translateX(-50%);
+        &__wrap{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            width: 60vw;
+        }
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            & li {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+
+}
+

@@ -30,6 +30,14 @@ img, video, canvas, svg {
     max-width: 100%;
 }
 
+a {
+    text-emphasis: none;
+}
+
+ul {
+    list-style: none;
+}
+
 /*----Variables----*/
 $main: #212121;
 $main-light:#2b2a2a;
